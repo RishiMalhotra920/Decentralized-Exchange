@@ -13,6 +13,7 @@ packages/react-app/src/contracts/*
 !packages/react-app/src/contracts/external_contracts.js
 packages/hardhat/cache*
 packages/**/data
+packages/hardhat/mnemonic.txt
 !packages/react-app/src/contracts/contracts.js
 
 
@@ -67,3 +68,7 @@ yarn-error.log*
 
 # doc directory
 /doc
+
+# mnemonic
+mnemonic.txt
+

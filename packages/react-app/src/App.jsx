@@ -59,7 +59,7 @@ const { ethers } = require("ethers");
 */
 
 /// 📡 What chain are your contracts deployed to?
-const initialNetwork = NETWORKS.localhost; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
+const initialNetwork = NETWORKS.rinkeby; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
 
 // 😬 Sorry for all the console logging
 const DEBUG = true;
@@ -87,6 +87,7 @@ function App(props) {
   const location = useLocation();
 
   const targetNetwork = NETWORKS[selectedNetwork];
+  console.log("using targetNetwork", targetNetwork);
 
   // 🔭 block explorer URL
   const blockExplorer = targetNetwork.blockExplorer;
